@@ -1,0 +1,15 @@
+<h3>Contact Me:</h3>
+
+<label for="name">Name:</label>
+<input id="name" [(ngModel)]="name"><br>
+
+<label for="email">Email:</label>
+<input id="email" [(ngModel)]="email"><br>
+
+<label for="message">Message:</label>
+<textarea id="message" [(ngModel)]="message"></textarea><br>
+
+<button (click)="submitForm()">Submit</button>
+
+<p>{{ submittedData }}</p>
+

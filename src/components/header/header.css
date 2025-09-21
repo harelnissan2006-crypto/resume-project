@@ -1,0 +1,51 @@
+/* header.css */
+
+.header {
+    background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
+    color: #fff;
+    padding: 24px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 16px rgba(78, 84, 200, 0.08);
+    border-radius: 0 0 18px 18px;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.header-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 28px;
+}
+
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+
+.header-nav a:hover {
+    background: rgba(255,255,255,0.13);
+    color: #4e54c8;
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        padding: 16px 10px;
+        border-radius: 0 0 10px 10px;
+    }
+    .header-nav {
+        gap: 14px;
+        margin-top: 10px;
+    }
+}

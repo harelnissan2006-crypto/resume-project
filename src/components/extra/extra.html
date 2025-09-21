@@ -1,0 +1,21 @@
+<h1>{{ e_title }}</h1>
+
+<p>Hobbies:</p>
+<ul>
+  <li *ngFor="let h of hobbies">{{ h }}</li>
+</ul>
+
+<label for="hobby">Add another hobby:</label>
+<input id="hobby" [(ngModel)]="hobby" name="hobby">
+
+<button (click)="saveHobby()">Save Hobby</button>
+
+<p>Degrees:</p>
+<ul>
+  <li>{{ degree1 }}</li>
+  <li>{{ degree2 }}</li>
+</ul>
+
+<p>Psychometry Score: {{ psychometryScore }}</p>
+
+
